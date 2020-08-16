@@ -27,6 +27,8 @@ object Dependencies {
     const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:1.1.3"
 
     const val COROUTINE = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9"
+
+    const val TIMBER = "com.jakewharton.timber:timber:4.7.1"
 }
 
 object TestDependencies {

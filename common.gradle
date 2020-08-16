@@ -50,4 +50,6 @@ dependencies {
     kapt JetpackDependencies.HILT_COMPILER
 
     implementation Dependencies.COROUTINE
+
+    implementation Dependencies.TIMBER
 }
