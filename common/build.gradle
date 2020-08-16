@@ -10,3 +10,8 @@ android {
         }
     }
 }
+
+dependencies {
+    implementation Dependencies.GLIDE
+    kapt Dependencies.GLIDE_COMPILER
+}
