@@ -1,5 +1,6 @@
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion AndroidConfig.COMPILE_SDK
@@ -22,4 +23,9 @@ dependencies {
     testImplementation TestDependencies.JUNIT
     androidTestImplementation TestDependencies.EXT_JUNIT
     androidTestImplementation TestDependencies.ESPRESSO_CORE
+
+    implementation JetpackDependencies.HILT_ANDROID
+    implementation JetpackDependencies.DAGGER_HILT_LIFECYCLE_VM
+    kapt JetpackDependencies.HILT_ANDROID_COMPILER
+    kapt JetpackDependencies.HILT_COMPILER
 }

@@ -22,11 +22,21 @@ object Dependencies {
     const val MATERIAL = "com.google.android.material:material:1.1.0"
     const val CORE_KTX = "androidx.core:core-ktx:1.3.0"
     const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:1.1.3"
-
 }
 
 object TestDependencies {
     const val JUNIT = "junit:junit:4.13"
     const val EXT_JUNIT = "androidx.test.ext:junit:1.1.1"
     const val ESPRESSO_CORE = "androidx.test.espresso:espresso-core:3.2.0"
+}
+
+object JetpackDependencies {
+    private const val HILT_VER = "2.28.3-alpha"
+    private const val HILT_JETPACK_VER = "1.0.0-alpha02"
+
+    const val HILT_ANDROID = "com.google.dagger:hilt-android:$HILT_VER"
+    const val HILT_ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:$HILT_VER"
+
+    const val DAGGER_HILT_LIFECYCLE_VM = "androidx.hilt:hilt-lifecycle-viewmodel:$HILT_JETPACK_VER"
+    const val HILT_COMPILER = "androidx.hilt:hilt-compiler:$HILT_JETPACK_VER"
 }
