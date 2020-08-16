@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name" translatable="false">BookFinder</string>
     <string name="hint_enter_book_name">Please enter the book name</string>
+    <string name="title_search_result_count">Results %s</string>
 </resources>

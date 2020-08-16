@@ -1,3 +1,4 @@
 <resources>
     <string name="hint_enter_book_name">책 이름을 입력해주세요.</string>
+    <string name="title_search_result_count">검색 결과 %s</string>
 </resources>
