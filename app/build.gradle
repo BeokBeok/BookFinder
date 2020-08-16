@@ -30,4 +30,6 @@ dependencies {
 
     implementation JetpackDependencies.LIFECYCLE_EXT
     implementation JetpackDependencies.LIFECYCLE_VIEWMODEL_KTX
+
+    implementation JetpackDependencies.ACTIVITY_KTX
 }
