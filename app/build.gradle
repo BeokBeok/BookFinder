@@ -1,18 +1,9 @@
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply from: "$rootDir/common.gradle"
 
 android {
-    compileSdkVersion AndroidConfig.COMPILE_SDK
-
     defaultConfig {
         applicationId AndroidConfig.APP_ID
-        minSdkVersion AndroidConfig.MIN_SDK
-        targetSdkVersion AndroidConfig.COMPILE_SDK
-        versionCode AndroidConfig.VERSION_CODE
-        versionName AndroidConfig.VERSION_NAME
-
-        testInstrumentationRunner AndroidConfig.TEST_INSTRUMENTATION_RUNNER
     }
 
     buildTypes {
@@ -24,14 +15,6 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation Dependencies.KOTLIN_STDLIB
-
     implementation Dependencies.MATERIAL
-    implementation Dependencies.CORE_KTX
     implementation Dependencies.CONSTRAINT_LAYOUT
-
-    testImplementation TestDependencies.JUNIT
-    androidTestImplementation TestDependencies.EXT_JUNIT
-    androidTestImplementation TestDependencies.ESPRESSO_CORE
 }

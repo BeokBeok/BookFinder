@@ -1,0 +1,25 @@
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion AndroidConfig.COMPILE_SDK
+
+    defaultConfig {
+        minSdkVersion AndroidConfig.MIN_SDK
+        targetSdkVersion AndroidConfig.COMPILE_SDK
+        versionCode AndroidConfig.VERSION_CODE
+        versionName AndroidConfig.VERSION_NAME
+
+        testInstrumentationRunner AndroidConfig.TEST_INSTRUMENTATION_RUNNER
+    }
+}
+
+dependencies {
+    implementation Dependencies.KOTLIN_STDLIB
+
+    implementation Dependencies.CORE_KTX
+
+    testImplementation TestDependencies.JUNIT
+    androidTestImplementation TestDependencies.EXT_JUNIT
+    androidTestImplementation TestDependencies.ESPRESSO_CORE
+}
