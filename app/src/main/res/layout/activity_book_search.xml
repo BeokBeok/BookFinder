@@ -44,13 +44,15 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_book_search_contents"
+            bind_replaceItems="@{vm.book}"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_book_search_result_count" />
+            app:layout_constraintTop_toBottomOf="@id/tv_book_search_result_count"
+            app:spanCount="2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

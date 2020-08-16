@@ -5,6 +5,8 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.beok.bookfinder.databinding.ActivityBookSearchBinding
+import com.beok.bookfinder.model.BookItem
+import com.beok.common.base.BaseAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -17,6 +19,14 @@ class BookSearchActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setupBinding()
+        setupRecyclerView()
+    }
+
+    private fun setupRecyclerView() {
+        binding.rvBookSearchContents.adapter = BaseAdapter<BookItem>(
+            layoutRes = R.layout.item_book,
+            bindingId = BR.item
+        )
     }
 
     private fun setupBinding() {

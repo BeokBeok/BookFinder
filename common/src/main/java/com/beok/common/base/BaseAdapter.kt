@@ -19,4 +19,13 @@ class BaseAdapter<ITEM : Any>(
     override fun onBindViewHolder(holder: BaseViewHolder, position: Int) {
         holder.bind(items[position])
     }
+
+    fun replaceItems(item: List<ITEM>?) {
+        if (item.isNullOrEmpty()) return
+
+        items.run {
+            clear()
+            addAll(item)
+        }
+    }
 }
