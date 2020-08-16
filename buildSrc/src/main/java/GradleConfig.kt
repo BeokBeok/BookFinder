@@ -37,12 +37,16 @@ object TestDependencies {
 
 object JetpackDependencies {
     private const val HILT_JETPACK_VER = "1.0.0-alpha02"
+    private const val LIFECYCLE_VER = "2.2.0"
 
     const val HILT_ANDROID = "com.google.dagger:hilt-android:${Version.HILT}"
     const val HILT_ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:${Version.HILT}"
 
     const val DAGGER_HILT_LIFECYCLE_VM = "androidx.hilt:hilt-lifecycle-viewmodel:$HILT_JETPACK_VER"
     const val HILT_COMPILER = "androidx.hilt:hilt-compiler:$HILT_JETPACK_VER"
+
+    const val LIFECYCLE_EXT = "androidx.lifecycle:lifecycle-extensions:$LIFECYCLE_VER"
+    const val LIFECYCLE_VIEWMODEL_KTX = "androidx.lifecycle:lifecycle-viewmodel-ktx:$LIFECYCLE_VER"
 }
 
 object NetworkDependencies {
