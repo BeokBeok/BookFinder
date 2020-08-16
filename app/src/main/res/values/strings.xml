@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">BookFinder</string>
+    <string name="app_name" translatable="false">BookFinder</string>
+    <string name="hint_enter_book_name">Please enter the book name</string>
 </resources>
