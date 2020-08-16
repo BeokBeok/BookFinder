@@ -1,4 +1,4 @@
-package com.beok.common
+package com.beok.common.ext
 
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope

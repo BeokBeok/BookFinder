@@ -1,4 +1,4 @@
-package com.beok.common
+package com.beok.common.ext
 
 import androidx.appcompat.widget.SearchView
 import androidx.databinding.BindingAdapter

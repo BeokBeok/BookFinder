@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.beok.bookfinder.model.BookItem
 import com.beok.bookfinder.model.mapToPresenter
-import com.beok.common.safeLaunch
+import com.beok.common.ext.safeLaunch
 import com.beok.domain.BooksRepository
 
 class BookSearchViewModel @ViewModelInject constructor(
