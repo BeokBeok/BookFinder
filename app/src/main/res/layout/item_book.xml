@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.beok.bookfinder.model.BookItem" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_book_thumbnail"
+            bind_imageUrlWithGlide="@{item.imageUrl}"
+            android:layout_width="0dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintDimensionRatio="V,3:4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_book_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@{item.title}"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_book_thumbnail"
+            tools:text="볼링의 정석" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_book_author"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@{item.authors}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_book_title"
+            tools:text="강현석 지음" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_book_published_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@{item.publishedDate}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_book_author"
+            tools:text="1988-03-07" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
