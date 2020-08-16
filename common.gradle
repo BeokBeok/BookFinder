@@ -13,6 +13,16 @@ android {
 
         testInstrumentationRunner AndroidConfig.TEST_INSTRUMENTATION_RUNNER
     }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+        freeCompilerArgs = ["-Xallow-result-return-type"]
+    }
+
+    packagingOptions {
+        exclude 'META-INF/metadata.kotlin_module'
+        exclude 'META-INF/metadata.jvm.kotlin_module'
+    }
 }
 
 dependencies {
