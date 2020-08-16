@@ -40,3 +40,16 @@ object JetpackDependencies {
     const val DAGGER_HILT_LIFECYCLE_VM = "androidx.hilt:hilt-lifecycle-viewmodel:$HILT_JETPACK_VER"
     const val HILT_COMPILER = "androidx.hilt:hilt-compiler:$HILT_JETPACK_VER"
 }
+
+object NetworkDependencies {
+    private const val RETROFIT_VER = "2.9.0"
+    private const val MOSHI_VER = "1.9.3"
+
+    const val RETROFIT = "com.squareup.retrofit2:retrofit:$RETROFIT_VER"
+
+    const val LOGGING_INTERCEPTOR = "com.squareup.okhttp3:logging-interceptor:3.14.2"
+
+    const val CONVERTER_MOSHI = "com.squareup.retrofit2:converter-moshi:$RETROFIT_VER"
+    const val MOSHI_KOTLIN = "com.squareup.moshi:moshi-kotlin:$MOSHI_VER"
+    const val MOSHI_KOTLIN_CODEGEN = "com.squareup.moshi:moshi-kotlin-codegen:$MOSHI_VER"
+}
