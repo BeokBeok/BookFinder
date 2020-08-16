@@ -1,6 +1,6 @@
 package com.beok.common
 
-import android.widget.SearchView
+import androidx.appcompat.widget.SearchView
 import androidx.databinding.BindingAdapter
 
 @BindingAdapter("bind_setOnQueryTextListener")

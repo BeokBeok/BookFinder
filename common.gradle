@@ -16,7 +16,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = JavaVersion.VERSION_1_8
         freeCompilerArgs = ["-Xallow-result-return-type"]
     }
 
@@ -39,6 +39,8 @@ dependencies {
     implementation Dependencies.KOTLIN_STDLIB
 
     implementation Dependencies.CORE_KTX
+
+    implementation Dependencies.MATERIAL
 
     testImplementation TestDependencies.JUNIT
     androidTestImplementation TestDependencies.EXT_JUNIT
