@@ -1,5 +1,6 @@
 package com.beok.domain.di
 
+import com.beok.domain.BooksService
 import com.beok.domain.BuildConfig
 import com.beok.domain.interceptor.GoogleBooksInterceptor
 import com.squareup.moshi.Moshi
@@ -59,6 +60,11 @@ class NetworkModule {
             .addConverterFactory(converterFactory)
             .client(client)
             .build()
+
+    @Provides
+    @Singleton
+    fun provideBooksService(retrofit: Retrofit): BooksService =
+        retrofit.create(BooksService::class.java)
 
     companion object {
         private const val BASE_URL = "https://www.googleapis.com/books/"
