@@ -1,10 +1,13 @@
 object Version {
     const val KOTLIN = "1.3.72"
+    const val HILT = "2.28.3-alpha"
 }
 
 object ProjectConfig {
     const val GRADLE = "com.android.tools.build:gradle:4.0.0"
     const val KOTLIN_GRADLE_PLUGIN = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Version.KOTLIN}"
+    const val HILT_ANDROID_GRADLE_PLUGIN =
+        "com.google.dagger:hilt-android-gradle-plugin:${Version.HILT}"
 }
 
 object AndroidConfig {
@@ -33,11 +36,10 @@ object TestDependencies {
 }
 
 object JetpackDependencies {
-    private const val HILT_VER = "2.28.3-alpha"
     private const val HILT_JETPACK_VER = "1.0.0-alpha02"
 
-    const val HILT_ANDROID = "com.google.dagger:hilt-android:$HILT_VER"
-    const val HILT_ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:$HILT_VER"
+    const val HILT_ANDROID = "com.google.dagger:hilt-android:${Version.HILT}"
+    const val HILT_ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:${Version.HILT}"
 
     const val DAGGER_HILT_LIFECYCLE_VM = "androidx.hilt:hilt-lifecycle-viewmodel:$HILT_JETPACK_VER"
     const val HILT_COMPILER = "androidx.hilt:hilt-compiler:$HILT_JETPACK_VER"
