@@ -15,6 +15,15 @@ android {
 }
 
 dependencies {
+    implementation project(":domain")
+
     implementation Dependencies.MATERIAL
     implementation Dependencies.CONSTRAINT_LAYOUT
+
+    implementation NetworkDependencies.RETROFIT
+    implementation NetworkDependencies.LOGGING_INTERCEPTOR
+
+    implementation NetworkDependencies.CONVERTER_MOSHI
+    implementation NetworkDependencies.MOSHI_KOTLIN
+    kapt NetworkDependencies.MOSHI_KOTLIN_CODEGEN
 }
