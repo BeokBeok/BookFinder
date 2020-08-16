@@ -28,4 +28,6 @@ dependencies {
     implementation JetpackDependencies.DAGGER_HILT_LIFECYCLE_VM
     kapt JetpackDependencies.HILT_ANDROID_COMPILER
     kapt JetpackDependencies.HILT_COMPILER
+
+    implementation Dependencies.COROUTINE
 }
