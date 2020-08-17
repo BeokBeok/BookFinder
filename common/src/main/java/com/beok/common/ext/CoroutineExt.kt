@@ -6,7 +6,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
-val coroutineExceptionHandler = CoroutineExceptionHandler { _, throwable ->
+private val coroutineExceptionHandler = CoroutineExceptionHandler { _, throwable ->
     Timber.d(throwable)
 }
 

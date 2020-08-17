@@ -10,8 +10,10 @@ import androidx.paging.PagedList
 import androidx.paging.toLiveData
 import com.beok.bookfinder.datasource.BookSearchDataSourceFactory
 import com.beok.bookfinder.model.BookItem
+import com.beok.common.event.ViewModelToViewEvent
 import com.beok.common.ext.safeLaunch
 import com.beok.domain.BooksRepository
+import kotlinx.coroutines.CoroutineExceptionHandler
 
 class BookSearchViewModel @ViewModelInject constructor(
     private val booksRepository: BooksRepository
@@ -29,33 +31,40 @@ class BookSearchViewModel @ViewModelInject constructor(
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> get() = _isLoading
 
+    private val _errMessage = MutableLiveData<String>()
+    val errMessage: LiveData<String> get() = _errMessage
+
     val searchBook = fun(keyword: String) {
-        showLoading()
         requestBookItems(keyword)
         requestResultCount(keyword)
-        hideLoading()
     }
 
-    private fun requestBookItems(keyword: String) {
-        book = BookSearchDataSourceFactory(keyword, booksRepository)
-            .toLiveData(config = Config(pageSize = PER_PAGE))
-        _isShowResult.value = true
+    private val viewModelToViewEvent = ViewModelToViewEvent(
+        showLoading = { _isLoading.postValue(it) },
+        showErrorMessage = { _errMessage.postValue(it) }
+    )
+
+    private val coroutineExceptionHandler = CoroutineExceptionHandler { _, throwable ->
+        _errMessage.value = throwable.message ?: ""
     }
 
-    private fun requestResultCount(keyword: String) = viewModelScope.safeLaunch {
-        val result = booksRepository.searchBook(keyword = keyword, perPage = 1)
-        if (result.isSuccess) {
-            _resultCount.value = result.getOrNull()?.totalItems
+    private fun requestBookItems(keyword: String) =
+        viewModelScope.safeLaunch(coroutineExceptionHandler) {
+            book = BookSearchDataSourceFactory(
+                keyword,
+                booksRepository,
+                viewModelToViewEvent
+            ).toLiveData(config = Config(pageSize = PER_PAGE))
+            _isShowResult.value = true
         }
-    }
 
-    private fun showLoading() {
-        _isLoading.value = true
-    }
-
-    private fun hideLoading() {
-        _isLoading.value = false
-    }
+    private fun requestResultCount(keyword: String) =
+        viewModelScope.safeLaunch(coroutineExceptionHandler) {
+            val result = booksRepository.searchBook(keyword = keyword, perPage = 1)
+            if (result.isSuccess) {
+                _resultCount.value = result.getOrNull()?.totalItems
+            }
+        }
 
     companion object {
         private const val PER_PAGE = 40
