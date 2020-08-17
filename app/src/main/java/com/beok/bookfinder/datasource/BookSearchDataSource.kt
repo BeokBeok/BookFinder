@@ -11,10 +11,9 @@ import kotlinx.coroutines.launch
 
 class BookSearchDataSource(
     private val keyword: String,
-    private val booksRepository: BooksRepository
+    private val booksRepository: BooksRepository,
+    private val ioScope: CoroutineScope = CoroutineScope(Dispatchers.IO)
 ) : PageKeyedDataSource<Int, BookItem>() {
-
-    private val ioScope = CoroutineScope(Dispatchers.IO)
 
     override fun loadInitial(
         params: LoadInitialParams<Int>,
