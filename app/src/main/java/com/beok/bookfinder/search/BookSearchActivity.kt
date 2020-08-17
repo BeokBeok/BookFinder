@@ -31,6 +31,11 @@ class BookSearchActivity : BaseActivity<ActivityBookSearchBinding>(
         setupObserve()
     }
 
+    override fun onResume() {
+        super.onResume()
+        binding.svBookSearch.clearFocus()
+    }
+
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
 
