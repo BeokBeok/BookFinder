@@ -4,12 +4,14 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.bundleOf
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DiffUtil
 import com.beok.bookfinder.databinding.ActivityBookSearchBinding
 import com.beok.bookfinder.model.BookItem
 import com.beok.common.base.BaseAdapter
+import com.beok.common.ext.startActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -36,6 +38,9 @@ class BookSearchActivity : AppCompatActivity() {
                 if (!isShowResult) return@Observer
                 showContents()
             })
+            selectedBuyLink.observe(owner, Observer {
+                startActivity<BookPreviewActivity>(bundleOf("buyLink" to it))
+            })
         }
     }
 
@@ -51,6 +56,7 @@ class BookSearchActivity : AppCompatActivity() {
             adapter = BaseAdapter(
                 layoutRes = R.layout.item_book,
                 bindingId = BR.item,
+                viewModel = mapOf(BR.vm to viewModel),
                 diffUtil = object : DiffUtil.ItemCallback<BookItem>() {
                     override fun areItemsTheSame(oldItem: BookItem, newItem: BookItem): Boolean =
                         oldItem == newItem

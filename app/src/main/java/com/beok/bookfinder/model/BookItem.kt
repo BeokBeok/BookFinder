@@ -7,7 +7,8 @@ data class BookItem(
     val title: String,
     val authors: String,
     val publishedDate: String,
-    val imageUrl: String
+    val imageUrl: String,
+    val buyLink: String
 )
 
 fun ItemsItem.mapToPresenter() = BookItem(
@@ -15,5 +16,6 @@ fun ItemsItem.mapToPresenter() = BookItem(
     title = volumeInfo.title,
     authors = volumeInfo.authors.joinToString(),
     publishedDate = volumeInfo.publishedDate,
-    imageUrl = volumeInfo.imageLinks.thumbnail
+    imageUrl = volumeInfo.imageLinks.thumbnail,
+    buyLink = saleInfo.buyLink
 )

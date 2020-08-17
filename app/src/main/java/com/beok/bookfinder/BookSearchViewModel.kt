@@ -34,9 +34,17 @@ class BookSearchViewModel @ViewModelInject constructor(
     private val _errMessage = MutableLiveData<String>()
     val errMessage: LiveData<String> get() = _errMessage
 
+    private val _selectedBuyLink = MutableLiveData<String>()
+    val selectedBuyLink: LiveData<String> get() = _selectedBuyLink
+
     val searchBook = fun(keyword: String) {
         requestBookItems(keyword)
         requestResultCount(keyword)
+    }
+
+    fun onClick(item: BookItem) {
+        if (item.buyLink.isEmpty()) _errMessage.value = "구매 링크가 존재하지 않습니다."
+        _selectedBuyLink.value = item.buyLink
     }
 
     private val viewModelToViewEvent = ViewModelToViewEvent(
