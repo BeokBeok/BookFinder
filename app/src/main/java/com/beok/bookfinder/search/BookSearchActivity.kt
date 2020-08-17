@@ -1,11 +1,13 @@
 package com.beok.bookfinder.search
 
+import android.content.res.Configuration
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.core.os.bundleOf
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.GridLayoutManager
 import com.beok.bookfinder.BR
 import com.beok.bookfinder.R
 import com.beok.bookfinder.buyInfo.BookBuyInfoActivity
@@ -27,6 +29,17 @@ class BookSearchActivity : BaseActivity<ActivityBookSearchBinding>(
 
         setupRecyclerView()
         setupObserve()
+    }
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+
+        val gridLayoutManager = (binding.rvBookSearchContents.layoutManager as GridLayoutManager)
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            gridLayoutManager.spanCount = LANDSCAPE_SPAN_COUNT
+        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            gridLayoutManager.spanCount = PORTRAIT_SPAN_COUNT
+        }
     }
 
     override fun setupBinding() {
@@ -66,14 +79,22 @@ class BookSearchActivity : BaseActivity<ActivityBookSearchBinding>(
                 layoutRes = R.layout.item_book,
                 bindingId = BR.item,
                 viewModel = mapOf(BR.vm to viewModel),
-                diffUtil = object : DiffUtil.ItemCallback<BookItem>() {
-                    override fun areItemsTheSame(oldItem: BookItem, newItem: BookItem): Boolean =
-                        oldItem == newItem
-
-                    override fun areContentsTheSame(oldItem: BookItem, newItem: BookItem): Boolean =
-                        oldItem.id == newItem.id
-                }
+                diffUtil = setupBookSearchDiffUtil()
             )
         }
+    }
+
+    private fun setupBookSearchDiffUtil(): DiffUtil.ItemCallback<BookItem> =
+        object : DiffUtil.ItemCallback<BookItem>() {
+            override fun areItemsTheSame(oldItem: BookItem, newItem: BookItem): Boolean =
+                oldItem == newItem
+
+            override fun areContentsTheSame(oldItem: BookItem, newItem: BookItem): Boolean =
+                oldItem.id == newItem.id
+        }
+
+    companion object {
+        private const val PORTRAIT_SPAN_COUNT = 2
+        private const val LANDSCAPE_SPAN_COUNT = 4
     }
 }
