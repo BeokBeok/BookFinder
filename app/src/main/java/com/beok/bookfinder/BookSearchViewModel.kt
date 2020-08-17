@@ -26,9 +26,6 @@ class BookSearchViewModel @ViewModelInject constructor(
     private val _resultCount = MutableLiveData(0)
     val resultCount: LiveData<Int> get() = _resultCount
 
-    private val _errMessage = MutableLiveData<String>()
-    val errMessage: LiveData<String> get() = _errMessage
-
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> get() = _isLoading
 

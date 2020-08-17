@@ -1,7 +1,6 @@
 package com.beok.bookfinder
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -27,16 +26,10 @@ class BookSearchActivity : AppCompatActivity() {
     }
 
     private fun setupObserve() {
-        val owner = this
-        viewModel.run {
-            errMessage.observe(owner, Observer {
-                Toast.makeText(owner, it, Toast.LENGTH_SHORT).show()
-            })
-            isShowResult.observe(owner, Observer { isShowResult ->
-                if (!isShowResult) return@Observer
-                showContents()
-            })
-        }
+        viewModel.isShowResult.observe(this, Observer { isShowResult ->
+            if (!isShowResult) return@Observer
+            showContents()
+        })
     }
 
     private fun showContents() {
