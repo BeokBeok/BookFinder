@@ -57,14 +57,17 @@
             app:layout_constraintTop_toBottomOf="@id/tv_book_search_result_count"
             app:spanCount="2" />
 
-        <ProgressBar
+        <com.airbnb.lottie.LottieAnimationView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="@{vm.isLoading ? View.VISIBLE : View.GONE}"
-            app:layout_constraintBottom_toBottomOf="@id/rv_book_search_contents"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/rv_book_search_contents" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="LightBulb.json"
+            app:lottie_loop="true" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="0dp"

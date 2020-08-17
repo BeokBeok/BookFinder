@@ -53,11 +53,10 @@ class BookBuyInfoActivity : BaseActivity<ActivityBookBuyInfoBinding>(
         return object : WebChromeClient() {
             override fun onProgressChanged(view: WebView?, newProgress: Int) {
                 super.onProgressChanged(view, newProgress)
-                binding.pbBookPreview.run {
+                binding.lavBookPreview.run {
                     if (newProgress == 100) {
                         visibility = View.GONE
                     }
-                    progress = newProgress
                 }
             }
         }
