@@ -39,10 +39,8 @@ class BookSearchViewModel @ViewModelInject constructor(
 
     fun searchBook(isNext: Boolean = false) = viewModelScope.safeLaunch {
         setupCurrentPage(isNext)
-        if (isLastPage()) {
-            hideLoading()
-            return@safeLaunch
-        }
+        if (isLastPage()) return@safeLaunch
+
         showLoading()
         val result = booksRepository.searchBook(keyword, currentPage, PER_PAGE)
         if (result.isFailure) {
@@ -91,7 +89,7 @@ class BookSearchViewModel @ViewModelInject constructor(
             bookItems.clear()
             return
         }
-        if (currentPage > _resultCount.value ?: START_PAGE) {
+        if (currentPage + PER_PAGE >= _resultCount.value ?: START_PAGE) {
             currentPage = _resultCount.value ?: START_PAGE
         } else {
             currentPage += PER_PAGE
