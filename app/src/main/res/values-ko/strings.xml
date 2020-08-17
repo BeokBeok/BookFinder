@@ -1,4 +1,5 @@
 <resources>
     <string name="hint_enter_book_name">책 이름을 입력해주세요.</string>
     <string name="title_search_result_count">검색 결과 %s</string>
+    <string name="contents_no_result">검색 결과가 없습니다.</string>
 </resources>
