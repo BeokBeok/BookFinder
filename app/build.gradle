@@ -31,4 +31,6 @@ dependencies {
     implementation JetpackDependencies.LIFECYCLE_VIEWMODEL_KTX
 
     implementation JetpackDependencies.ACTIVITY_KTX
+
+    implementation JetpackDependencies.PAGING_RUNTIME_KTX
 }

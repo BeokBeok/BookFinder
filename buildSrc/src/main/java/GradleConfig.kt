@@ -56,6 +56,8 @@ object JetpackDependencies {
     const val LIFECYCLE_VIEWMODEL_KTX = "androidx.lifecycle:lifecycle-viewmodel-ktx:$LIFECYCLE_VER"
 
     const val ACTIVITY_KTX = "androidx.activity:activity-ktx:1.2.0-alpha07"
+
+    const val PAGING_RUNTIME_KTX = "androidx.paging:paging-runtime-ktx:2.1.2"
 }
 
 object NetworkDependencies {

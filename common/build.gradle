@@ -14,4 +14,6 @@ android {
 dependencies {
     implementation Dependencies.GLIDE
     kapt Dependencies.GLIDE_COMPILER
+
+    implementation JetpackDependencies.PAGING_RUNTIME_KTX
 }
