@@ -39,7 +39,7 @@ class BookSearchActivity : AppCompatActivity() {
                 showContents()
             })
             selectedBuyLink.observe(owner, Observer {
-                startActivity<BookPreviewActivity>(bundleOf("buyLink" to it))
+                startActivity<BookBuyInfoActivity>(bundleOf("buyLink" to it))
             })
         }
     }
