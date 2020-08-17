@@ -10,8 +10,12 @@ class BooksRepository @Inject constructor(private val booksService: BooksService
 
     private val ioDispatcher = Dispatchers.IO
 
-    override suspend fun searchBook(bookName: String, page: Int): Result<BooksResponse> =
+    override suspend fun searchBook(
+        keyword: String,
+        page: Int,
+        perPage: Int
+    ): Result<BooksResponse> =
         withContext(ioDispatcher) {
-            runCatching { booksService.search(bookName, page) }
+            runCatching { booksService.search(keyword, page, perPage) }
         }
 }

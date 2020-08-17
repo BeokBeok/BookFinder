@@ -40,7 +40,7 @@ class BookSearchViewModel @ViewModelInject constructor(
         showLoading()
         setupCurrentPage(isNext)
 
-        val result = booksRepository.searchBook(keyword, currentPage)
+        val result = booksRepository.searchBook(keyword, currentPage, PER_PAGE)
         if (result.isFailure) {
             _errMessage.value = result.exceptionOrNull()?.message ?: ""
             hideLoading()
@@ -92,6 +92,6 @@ class BookSearchViewModel @ViewModelInject constructor(
 
     companion object {
         private const val START_PAGE = 0
-        private const val PER_PAGE = 10
+        private const val PER_PAGE = 40
     }
 }

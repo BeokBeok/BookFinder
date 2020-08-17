@@ -9,7 +9,7 @@ interface BooksService {
     @GET("v1/volumes")
     suspend fun search(
         @Query("q")
-        bookName: String,
+        keyword: String,
         @Query("startIndex")
         startIndex: Int = 0,
         @Query("maxResults")

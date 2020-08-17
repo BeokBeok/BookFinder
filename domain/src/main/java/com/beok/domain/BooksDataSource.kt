@@ -4,5 +4,5 @@ import com.beok.domain.entity.BooksResponse
 
 interface BooksDataSource {
 
-    suspend fun searchBook(bookName: String, page: Int = 0): Result<BooksResponse>
+    suspend fun searchBook(keyword: String, page: Int = 0, perPage: Int = 10): Result<BooksResponse>
 }
