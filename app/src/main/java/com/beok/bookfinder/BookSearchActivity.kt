@@ -3,29 +3,32 @@ package com.beok.bookfinder
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
-import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DiffUtil
 import com.beok.bookfinder.databinding.ActivityBookSearchBinding
 import com.beok.bookfinder.model.BookItem
+import com.beok.common.base.BaseActivity
 import com.beok.common.base.BaseAdapter
 import com.beok.common.ext.startActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class BookSearchActivity : AppCompatActivity() {
-
+class BookSearchActivity : BaseActivity<ActivityBookSearchBinding>(
+    R.layout.activity_book_search
+) {
     private val viewModel by viewModels<BookSearchViewModel>()
-    private lateinit var binding: ActivityBookSearchBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setupBinding()
         setupRecyclerView()
         setupObserve()
+    }
+
+    override fun setupBinding() {
+        super.setupBinding()
+        binding.vm = viewModel
     }
 
     private fun setupObserve() {
@@ -69,11 +72,5 @@ class BookSearchActivity : AppCompatActivity() {
                 }
             )
         }
-    }
-
-    private fun setupBinding() {
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_book_search)
-        binding.lifecycleOwner = this
-        binding.vm = viewModel
     }
 }

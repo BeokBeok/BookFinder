@@ -8,21 +8,20 @@ import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import com.beok.bookfinder.databinding.ActivityBookBuyInfoBinding
+import com.beok.common.base.BaseActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class BookBuyInfoActivity : AppCompatActivity() {
+class BookBuyInfoActivity : BaseActivity<ActivityBookBuyInfoBinding>(
+    R.layout.activity_book_buy_info
+) {
 
-    private lateinit var binding: ActivityBookBuyInfoBinding
     private val viewModel by viewModels<BookBuyInfoViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setupBinding()
         setupWebView()
         setupViewModel()
         setupObserve()
@@ -38,11 +37,6 @@ class BookBuyInfoActivity : AppCompatActivity() {
 
     private fun setupViewModel() {
         viewModel.setupBuyLink((intent.extras?.get("buyLink") as? String) ?: "")
-    }
-
-    private fun setupBinding() {
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_book_buy_info)
-        binding.lifecycleOwner = this
     }
 
     @SuppressLint("SetJavaScriptEnabled")
