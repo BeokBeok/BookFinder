@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".BookBuyInfoActivity">
+        tools:context=".buyInfo.BookBuyInfoActivity">
 
         <WebView
             android:id="@+id/wv_book_preview"

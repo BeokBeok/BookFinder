@@ -1,4 +1,4 @@
-package com.beok.bookfinder
+package com.beok.bookfinder.search
 
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
@@ -8,8 +8,9 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.Config
 import androidx.paging.PagedList
 import androidx.paging.toLiveData
-import com.beok.bookfinder.datasource.BookSearchDataSourceFactory
+import com.beok.bookfinder.R
 import com.beok.bookfinder.model.BookItem
+import com.beok.bookfinder.search.datasource.BookSearchDataSourceFactory
 import com.beok.common.event.ViewModelToViewEvent
 import com.beok.common.ext.safeLaunch
 import com.beok.domain.BooksRepository
@@ -47,7 +48,8 @@ class BookSearchViewModel @ViewModelInject constructor(
 
     fun onClick(item: BookItem) {
         if (item.buyLink.isEmpty()) {
-            _errResMessage.value = R.string.err_not_exist_buy_link
+            _errResMessage.value =
+                R.string.err_not_exist_buy_link
             return
         }
         _selectedBuyLink.value = item.buyLink

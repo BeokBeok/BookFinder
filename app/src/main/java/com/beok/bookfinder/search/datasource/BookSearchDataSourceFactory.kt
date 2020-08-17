@@ -1,4 +1,4 @@
-package com.beok.bookfinder.datasource
+package com.beok.bookfinder.search.datasource
 
 import androidx.paging.DataSource
 import com.beok.bookfinder.model.BookItem

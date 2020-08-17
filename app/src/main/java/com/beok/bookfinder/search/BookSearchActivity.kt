@@ -1,4 +1,4 @@
-package com.beok.bookfinder
+package com.beok.bookfinder.search
 
 import android.os.Bundle
 import android.widget.Toast
@@ -6,6 +6,9 @@ import androidx.activity.viewModels
 import androidx.core.os.bundleOf
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DiffUtil
+import com.beok.bookfinder.BR
+import com.beok.bookfinder.R
+import com.beok.bookfinder.buyInfo.BookBuyInfoActivity
 import com.beok.bookfinder.databinding.ActivityBookSearchBinding
 import com.beok.bookfinder.model.BookItem
 import com.beok.common.base.BaseActivity

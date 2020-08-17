@@ -1,4 +1,4 @@
-package com.beok.bookfinder
+package com.beok.bookfinder.buyInfo
 
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData

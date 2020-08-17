@@ -1,4 +1,4 @@
-package com.beok.bookfinder
+package com.beok.bookfinder.buyInfo
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -9,6 +9,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
+import com.beok.bookfinder.R
 import com.beok.bookfinder.databinding.ActivityBookBuyInfoBinding
 import com.beok.common.base.BaseActivity
 import dagger.hilt.android.AndroidEntryPoint

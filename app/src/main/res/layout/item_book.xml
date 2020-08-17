@@ -11,7 +11,7 @@
 
         <variable
             name="vm"
-            type="com.beok.bookfinder.BookSearchViewModel" />
+            type="com.beok.bookfinder.search.BookSearchViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
