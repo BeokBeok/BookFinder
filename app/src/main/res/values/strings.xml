@@ -3,4 +3,5 @@
     <string name="hint_enter_keyword">Please enter the keyword (title, author)</string>
     <string name="title_search_result_count">Results %s</string>
     <string name="contents_no_result">No result</string>
+    <string name="err_not_exist_buy_link">No buy link</string>
 </resources>

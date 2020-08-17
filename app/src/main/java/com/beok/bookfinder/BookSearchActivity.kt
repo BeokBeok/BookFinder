@@ -34,6 +34,9 @@ class BookSearchActivity : AppCompatActivity() {
             errMessage.observe(owner, Observer {
                 Toast.makeText(owner, it, Toast.LENGTH_SHORT).show()
             })
+            errResMessage.observe(owner, Observer {
+                Toast.makeText(owner, getString(it), Toast.LENGTH_SHORT).show()
+            })
             isShowResult.observe(owner, Observer { isShowResult ->
                 if (!isShowResult) return@Observer
                 showContents()

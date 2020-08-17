@@ -2,4 +2,5 @@
     <string name="hint_enter_keyword">검색어를 입력해주세요. (책 제목, 저자)</string>
     <string name="title_search_result_count">검색 결과 %s</string>
     <string name="contents_no_result">검색 결과가 없습니다.</string>
+    <string name="err_not_exist_buy_link">구매 링크가 존재하지 않습니다.</string>
 </resources>
