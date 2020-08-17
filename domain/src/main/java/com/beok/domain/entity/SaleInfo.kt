@@ -13,5 +13,17 @@ data class SaleInfo(
 	val isEbook: Boolean = false,
 
 	@Json(name = "saleability")
-	val saleability: String = ""
+	val saleability: String = "",
+
+	@Json(name = "offers")
+	val offers: List<OffersItem> = emptyList(),
+
+	@Json(name = "buyLink")
+	val buyLink: String = "",
+
+	@Json(name = "retailPrice")
+	val retailPrice: RetailPrice = RetailPrice(),
+
+	@Json(name = "listPrice")
+	val listPrice: ListPrice = ListPrice()
 )
