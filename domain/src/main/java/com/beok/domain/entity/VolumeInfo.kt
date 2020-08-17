@@ -55,7 +55,7 @@ data class VolumeInfo(
 	val description: String = "",
 
 	@Json(name = "averageRating")
-	val averageRating: Int = 0,
+	val averageRating: Double = 0.0,
 
 	@Json(name = "panelizationSummary")
 	val panelizationSummary: PanelizationSummary = PanelizationSummary(),
