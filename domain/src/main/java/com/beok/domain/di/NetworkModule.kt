@@ -40,7 +40,8 @@ class NetworkModule {
 
     @Provides
     @Singleton
-    fun provideMoshiConverter(moshi: Moshi) = MoshiConverterFactory.create(moshi)
+    fun provideMoshiConverter(moshi: Moshi): MoshiConverterFactory =
+        MoshiConverterFactory.create(moshi)
 
     @Provides
     @Singleton
