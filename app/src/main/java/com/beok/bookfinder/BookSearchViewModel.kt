@@ -9,6 +9,7 @@ import com.beok.bookfinder.model.BookItem
 import com.beok.bookfinder.model.mapToPresenter
 import com.beok.common.ext.safeLaunch
 import com.beok.domain.BooksRepository
+import com.beok.domain.entity.BooksResponse
 
 class BookSearchViewModel @ViewModelInject constructor(
     private val booksRepository: BooksRepository
@@ -37,21 +38,33 @@ class BookSearchViewModel @ViewModelInject constructor(
     }
 
     fun searchBook(isNext: Boolean = false) = viewModelScope.safeLaunch {
-        showLoading()
         setupCurrentPage(isNext)
-
+        if (isLastPage()) {
+            hideLoading()
+            return@safeLaunch
+        }
+        showLoading()
         val result = booksRepository.searchBook(keyword, currentPage, PER_PAGE)
         if (result.isFailure) {
             _errMessage.value = result.exceptionOrNull()?.message ?: ""
             hideLoading()
             return@safeLaunch
         }
+        setupBookSearchItems(result, isNext)
+    }
+
+    private fun setupBookSearchItems(result: Result<BooksResponse>, isNext: Boolean) {
         result.map { it.mapToPresenter() }.getOrNull()?.let {
             setupResultCount(it.totalItems, isNext)
             setupBookItems(it.items)
         }
         hideLoading()
+    }
 
+    private fun isLastPage(): Boolean {
+        val isStartPage = currentPage == START_PAGE
+        val isLastPage = currentPage == _resultCount.value
+        return !isStartPage && isLastPage
     }
 
     private fun showLoading() {
@@ -68,9 +81,8 @@ class BookSearchViewModel @ViewModelInject constructor(
     }
 
     private fun setupResultCount(totalItems: Int, isNext: Boolean = false) {
-        if (!isNext) {
-            _resultCount.value = totalItems
-        }
+        if (isNext) return
+        _resultCount.value = totalItems
     }
 
     private fun setupCurrentPage(isNext: Boolean) {
