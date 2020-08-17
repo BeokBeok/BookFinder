@@ -6,7 +6,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
-import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.DiffUtil
 import com.beok.bookfinder.databinding.ActivityBookSearchBinding
 import com.beok.bookfinder.model.BookItem
 import com.beok.common.base.BaseAdapter
@@ -27,24 +27,38 @@ class BookSearchActivity : AppCompatActivity() {
     }
 
     private fun setupObserve() {
-        viewModel.errMessage.observe(this, Observer {
-            Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
+        val owner = this
+        viewModel.run {
+            errMessage.observe(owner, Observer {
+                Toast.makeText(owner, it, Toast.LENGTH_SHORT).show()
+            })
+            isShowResult.observe(owner, Observer { isShowResult ->
+                if (!isShowResult) return@Observer
+                showContents()
+            })
+        }
+    }
+
+    private fun showContents() {
+        viewModel.book?.observe(this, Observer {
+            @Suppress("UNCHECKED_CAST")
+            (binding.rvBookSearchContents.adapter as BaseAdapter<BookItem>).submitList(it)
         })
     }
 
     private fun setupRecyclerView() {
         binding.rvBookSearchContents.run {
-            adapter = BaseAdapter<BookItem>(
+            adapter = BaseAdapter(
                 layoutRes = R.layout.item_book,
-                bindingId = BR.item
-            )
-            addOnScrollListener(object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                    super.onScrolled(recyclerView, dx, dy)
-                    if (!recyclerView.canScrollVertically(1))
-                        viewModel.searchBook(isNext = true)
+                bindingId = BR.item,
+                diffUtil = object : DiffUtil.ItemCallback<BookItem>() {
+                    override fun areItemsTheSame(oldItem: BookItem, newItem: BookItem): Boolean =
+                        oldItem == newItem
+
+                    override fun areContentsTheSame(oldItem: BookItem, newItem: BookItem): Boolean =
+                        oldItem.id == newItem.id
                 }
-            })
+            )
         }
     }
 
