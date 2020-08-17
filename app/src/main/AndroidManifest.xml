@@ -18,14 +18,16 @@
         tools:targetApi="m">
         <activity
             android:name=".search.BookSearchActivity"
-            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">
+            android:configChanges="orientation|screenSize|screenLayout">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".buyInfo.BookBuyInfoActivity" />
+        <activity
+            android:name=".buyInfo.BookBuyInfoActivity"
+            android:configChanges="orientation|screenSize|screenLayout" />
     </application>
 
 </manifest>
