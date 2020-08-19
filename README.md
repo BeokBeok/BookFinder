@@ -1,13 +1,13 @@
 # BookFinder
 책 이름 또는 저자명으로 책을 검색합니다.
 
-# DEMO
+# Demo
 ![화면 기록 2020-08-19 오후 9 53 58 mov](https://user-images.githubusercontent.com/48344355/90637280-c2257e00-e266-11ea-9a11-9b455c0e9ff1.gif)
 
 # Architecture (feat: Multi-Module)
 ![](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)
 
-# Apply tech
+# Apply Tech
 ### Jetpack
 - [Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)
 - [Databinding](https://developer.android.com/jetpack/androidx/releases/databinding)
