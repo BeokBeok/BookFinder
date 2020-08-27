@@ -19,7 +19,7 @@ class BaseViewHolder(
 ) {
     private val binding: ViewDataBinding = DataBindingUtil.bind(itemView)!!
 
-    fun bind(item: Any?, viewModel: Map<Int, ViewModel>) {
+    fun bind(item: Any?) {
         if (item == null) return
         binding.setVariable(bindingId, item)
 

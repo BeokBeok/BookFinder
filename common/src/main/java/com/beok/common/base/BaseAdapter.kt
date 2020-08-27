@@ -22,6 +22,6 @@ class BaseAdapter<ITEM : Any>(
         )
 
     override fun onBindViewHolder(holder: BaseViewHolder, position: Int) {
-        holder.bind(getItem(position), viewModel)
+        holder.bind(getItem(position))
     }
 }

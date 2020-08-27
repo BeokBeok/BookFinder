@@ -48,8 +48,7 @@ class BookSearchViewModel @ViewModelInject constructor(
 
     fun onClick(item: BookItem) {
         if (item.buyLink.isEmpty()) {
-            _errResMessage.value =
-                R.string.err_not_exist_buy_link
+            _errResMessage.value = R.string.err_not_exist_buy_link
             return
         }
         _selectedBuyLink.value = item.buyLink
