@@ -1,0 +1,829 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 229,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "oox5DwAAQBAJ",
+      "etag": "6KXqKNn4YuU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/oox5DwAAQBAJ",
+      "volumeInfo": {
+        "title": "Learn Android Studio 3 with Kotlin",
+        "subtitle": "Efficient Android App Development",
+        "authors": [
+          "Ted Hagos"
+        ],
+        "publisher": "Apress",
+        "publishedDate": "2018-11-12",
+        "description": "Build Android apps using the popular and efficient Android Studio 3 suite of tools, an integrated development environment (IDE) with which Android developers can now use the Kotlin programming language. With this book, you’ll learn the latest and most productive tools in the Android tools ecosystem, ensuring quick Android app development and minimal effort on your part. Along the way, you’ll use Android Studio to develop apps tier by tier through practical examples. These examples cover core Android topics such as Activities, Intents, BroadcastReceivers, Services and AsyncTask. Then, you’ll learn how to publish your apps and sell them online and in the Google Play store. What You’ll Learn Use Android Studio 3 to quickly and confidently build your first Android apps Build an Android user interface using activities and layouts, event handling, images, menus and the action bar Incorporate new elements including fragments Learn how data is persisted Use Kotlin to build apps Who This Book Is For Those who may be new to Android Studio 3 or Android Studio in general. You may or may not be new to Android development in general. Some prior experience with Java is also recommended.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781484239070"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1484239075"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 469,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=oox5DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=oox5DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=oox5DwAAQBAJ&pg=PA5&dq=effective+kotlin&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=oox5DwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=oox5DwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 37857,
+          "currencyCode": "KRW"
+        },
+        "retailPrice": {
+          "amount": 34071,
+          "currencyCode": "KRW"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=oox5DwAAQBAJ&rdid=book-oox5DwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 37857000000,
+              "currencyCode": "KRW"
+            },
+            "retailPrice": {
+              "amountInMicros": 34071000000,
+              "currencyCode": "KRW"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Learn_Android_Studio_3_with_Kotlin-sample-epub.acsm?id=oox5DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Learn_Android_Studio_3_with_Kotlin-sample-pdf.acsm?id=oox5DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=oox5DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "We don&#39;t need to explicitly write getters and setters for data objects; there are <br>\nlanguage features in Kotlin, which allows us to ... Also, because Kotlin is new, <br>\nthere is no “<b>Effective Kotlin</b>” guide post yet, while Java programmers will always <br>\nhave&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "3PxwDwAAQBAJ",
+      "etag": "Q3pXNwaHFbc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/3PxwDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Hands-On Serverless Applications with Kotlin",
+        "subtitle": "Develop scalable and cost-effective web applications using AWS Lambda and Kotlin",
+        "authors": [
+          "Hardik Trivedi",
+          "Ameya Kulkarni"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2018-09-29",
+        "description": "Choose the right architecture and design it using design patterns to create a serverless application that cuts costs and is easily scalable Key Features Design enterprise ready serverless applications that effortlessly meet your customers’ requirements Effectively deploy, manage, monitor, and orchestrate serverless applications using AWS Use Cloud9 to provision a secured development environment in the cloud Book Description Serverless is a cloud computing execution model where the cloud provider dynamically manages the allocation and provisioning of servers. Many companies have started using serverless architectures to cut costs and improve scalability. Hands-On Serverless Applications with Kotlin is your one-stop guide to designing serverless architectures for your applications with AWS and Kotlin. To start with, you’ll explore the fundamentals of serverless architecture and how AWS Lambda functions work. You will then learn to design, build, secure, and deploy your application to production. In addition to these activities, you’ll understand how to implement non-functional requirements such as auditing and logging. Moving on, you’ll discover how to scale up and orchestrate serverless applications using an open source framework and handle distributed serverless systems in production. By the end of the book, you’ll have gained the knowledge needed to build scalable and cost-efficient Kotlin applications with a serverless framework. What you will learn Design a serverless architecture Use AWS Lambda to contain your serverless API Explore the various ways to keep serverless apps safe and secure Understand how a serverless API allows you to use huge infrastructure and cut costs Discover how to handle distributed systems in Kotlin Design the data flow between cloud services and custom business logic Secure your Kotlin AWS serverless application Master Kotlin design patterns for serverless applications Who this book is for Hands-On Serverless Applications with Kotlin is for you if you are a Kotlin developer who wants to learn about serverless architectures. It is assumed that you have some knowledge of Kotlin programming and AWS.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781788991049"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1788991044"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 386,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=3PxwDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=3PxwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=3PxwDwAAQBAJ&pg=PA1&dq=effective+kotlin&hl=&cd=3&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=3PxwDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=3PxwDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 40118,
+          "currencyCode": "KRW"
+        },
+        "retailPrice": {
+          "amount": 36106,
+          "currencyCode": "KRW"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=3PxwDwAAQBAJ&rdid=book-3PxwDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 40118000000,
+              "currencyCode": "KRW"
+            },
+            "retailPrice": {
+              "amountInMicros": 36106000000,
+              "currencyCode": "KRW"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=3PxwDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Develop scalable and cost-<b>effective</b> web applications using AWS Lambda and <br>\n<b>Kotlin</b> Hardik Trivedi, Ameya Kulkarni ... book will be your companion and guide <br>\nto designing serverless architectures for your applications with AWS and <b>Kotlin</b>."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "WX5_DwAAQBAJ",
+      "etag": "KYCjk6OCgNw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/WX5_DwAAQBAJ",
+      "volumeInfo": {
+        "title": "Kotlin for Android App Development",
+        "authors": [
+          "Peter Sommerhoff"
+        ],
+        "publisher": "Addison-Wesley Professional",
+        "publishedDate": "2018-12-17",
+        "description": "Write More Robust and Maintainable Android Apps with Kotlin “Peter Sommerhoff takes a practical approach to teaching Kotlin by providing a larger set of code listings that demonstrate language features and by guiding readers through the development of two Android apps step by step. . . . Peter finds a good balance between what is essential and what can be left to readers, so this book is an efficient yet comprehensible source for starting programming with Kotlin.” –Bernhard Rumpe, Professor of Software Engineering, RWTH Aachen University The Kotlin language brings state-of-the-art programming techniques and constructs to Android development. Kotlin for Android App Development will help you rapidly understand Kotlin’s principles and techniques, apply Kotlin in production app development, integrate Kotlin with existing Java code, and plan a migration to Kotlin, if you choose. If you have at least basic programming experience (with any language), Peter Sommerhoff’s well-crafted overview and examples will help you get quickly up-to-speed with the Kotlin language, its constructs, and its advanced functional and object-oriented capabilities. Once you’ve mastered these foundations, Sommerhoff walks you through two complete app development projects, introducing best practices and emerging patterns for writing code that’s robust, concise, readable, and highly performant. Understand Kotlin’s goals, principles, advantages, design, and constructs Take full advantage of functional programming in the Kotlin environment Write more concise and reusable code using Kotlin’s object-oriented features Interoperate with existing Java code, and plan a migration to Kotlin Use coroutines to efficiently handle concurrency Capture data via third-party APIs, map it to internal data representations, and present it to users Master best practices for architecting Kotlin Android apps Improve productivity and readability by creating simple domain-specific languages in Kotlin",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780134854229"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0134854225"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 432,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=WX5_DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=WX5_DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=WX5_DwAAQBAJ&pg=PT38&dq=effective+kotlin&hl=&cd=4&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=WX5_DwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=WX5_DwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 29076,
+          "currencyCode": "KRW"
+        },
+        "retailPrice": {
+          "amount": 26168,
+          "currencyCode": "KRW"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=WX5_DwAAQBAJ&rdid=book-WX5_DwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 29076000000,
+              "currencyCode": "KRW"
+            },
+            "retailPrice": {
+              "amountInMicros": 26168000000,
+              "currencyCode": "KRW"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Kotlin_for_Android_App_Development-sample-epub.acsm?id=WX5_DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Kotlin_for_Android_App_Development-sample-pdf.acsm?id=WX5_DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=WX5_DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "But foremost, <b>Kotlin</b> is at the same time a strongly typed language and offers <br>\n<b>efficient</b> language constructs for both ... including autocompletion in editors, quick <br>\naccess to documentation, <b>effective</b> code navigation, and sophisticated code&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "X1bjDwAAQBAJ",
+      "etag": "ZPRwv9jMAmE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/X1bjDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Android Application Development with Kotlin",
+        "subtitle": "Build Your First Android App In No Time",
+        "authors": [
+          "Hardik Trivedi"
+        ],
+        "publisher": "BPB Publications",
+        "publishedDate": "2020-05-12",
+        "description": "Unleash the Power of Kotlin for Android App Development DESCRIPTION This book aims to provide the knowledge around the fundamental concept of Kotlin languages, and it’s an application in Android application development. It covers basic to advanced concepts with practical examples. Each chapter in this book is a step by step journey towards the learning Kotlin and excel in various topics and concepts. It covers topics like data types, various functions, including lambdas and higher-order functions. It also covers advanced topics like Generics, Collections, DSL, Coroutine, etc. Most importantly, such concepts are explained with practical usage of it in Android application. You will get to know what is the best possible way to use these concepts while you develop an Android application. In this book, along with Kotlin, an attempt has been made where few Android-specific topics are also explained. For example, the application is using Architecture components, including ViewModel, LiveData, NavigationComponent, and also it uses Flow, which is a hot topic in Kotlin. While we learn this concept, along with that, we also develop a sample application where we can apply our learning and, in the end, have some tangible and measurable output. Readers with little previous knowledge of Android application development can easily follow this book. Most of the chapters are code-heavy and focuses on practical usage of Kotlin’s features. Each chapter has code on the GitHub. You can check out this code and try it out. Or you can develop in parallel and cherry-pick things from the sample code base as and when you need it. Few chapters also follow the quiz at the end, and you can self assess yourself by going through that quiz. In total there are ten chapters. KEY FEATURES The book has theories explained elaborately along with Kotlin code and corresponding output to support the theoretical explanations. The Kotlin codes are provided with step-by-step comments to explain each instruction of the code. The book is quite well balanced with programs and illustrative real-case problems. The book is not just explaining theoretical concepts of the language. Still, it explains how the full-fledged application can be developed using some latest tools and technologies and create an excellent Android application using Kotlin. Few of the chapter offers the quiz at the end of it. And you can revise the concepts quickly. A rich sample application is created to demonstrate Kotlin’s capability in various parts of the application. Quite the latest concepts are discussed in depth. For example, Flow, NavigationComponent, Coroutine, ViewModel, and LiveData. WHAT WILL YOU LEARN Know the basics and many advanced concepts of Android. Able to code in Kotlin for your Android application. You will know how architecture components can be used in Android application with Kotlin. Writing tests that use coroutine, Flow, LiveData, and ViewModel. What measures you need to take before you put an application in production. How agile practices can be applied before and after the application development is started. WHO THIS BOOK IS FOR The book is for readers with basic programming and android application development skills. The book is for any engineering graduates that wish to use Kotlin as a programming language for their Android application or wish to build a career in this direction. This book can also be useful for those who want to learn how testing aspects work for Android applications. The use cases and programs discussed in the book are self-explanatory and detailed with practical examples wherever necessary. This is why the book can be read by anyone who has an interest in Kotlin and Android and how applications are developed with the industry level standard maintained. TABLE OF CONTENTS 1. Getting started with Kotlin for Android 2. Kotlin Fundamentals 3. Go to the Depth of Kotlin 4. Design Patterns in Kotlin 5. Analyzing and Architecting a Meal Recipe App 6. Making Network Calls Using Coroutines 7. Kotlin-ize remaining of your app 8. Testing the Kotlin Code 9. Make Your App Production Ready 10. Kotlin Everywhere",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9789389423501"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "9389423503"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 402,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.1.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=X1bjDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=X1bjDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=X1bjDwAAQBAJ&pg=PT111&dq=effective+kotlin&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=X1bjDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=X1bjDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 11976,
+          "currencyCode": "KRW"
+        },
+        "retailPrice": {
+          "amount": 10778,
+          "currencyCode": "KRW"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=X1bjDwAAQBAJ&rdid=book-X1bjDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 11976000000,
+              "currencyCode": "KRW"
+            },
+            "retailPrice": {
+              "amountInMicros": 10778000000,
+              "currencyCode": "KRW"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Android_Application_Development_with_Kot-sample-epub.acsm?id=X1bjDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.kr/books/download/Android_Application_Development_with_Kot-sample-pdf.acsm?id=X1bjDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=X1bjDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "<b>Kotlin</b> is highly inspired by The <b>Effective</b> Java norms. And Item #17 says Design <br>\nand document for inheritance or else prohibit it. According to this norm <br>\nInheritance sometimes breaks the rule of encapsulation. Subclasses don&#39;t know <br>\nthe&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "kEFPDwAAQBAJ",
+      "etag": "oJVbLEsAlrc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/kEFPDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Mastering Android Development with Kotlin",
+        "subtitle": "Deep dive into the world of Android to create robust applications with Kotlin",
+        "authors": [
+          "Milos Vasic"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2017-11-08",
+        "description": "Master Android development using a variety of Kotlin features About This Book Leverage specific features of Kotlin to ease Android application development An illustrative guide that will help you write code based Kotlin language to build robust Android applications Filled with various practical examples build amazing Android project using Kotlin so you can easily apply your knowledge to real world scenarios Who This Book Is For The book is for developers who want to build amazing Android applications in an easy and effective way. Basic knowledge of Kotlin is assumed, but you do not need any familiarity with Android development. What You Will Learn Understand the basics of Android development with Kotlin Get to know the key concepts in Android development See how to create modern mobile applications for the Android platform Adjust your application's look and feel Know how to persist and share application database Work with Services and other concurrency mechanisms Write effective tests Migrate an existing Java-based project to Kotlin In Detail Kotlin is a programming language intended to be a better Java, and it's designed to be usable and readable across large teams with different levels of knowledge. As a language, it helps developers build amazing Android applications in an easy and effective way. This book begins by giving you a strong grasp of Kotlin's features in the context of Android development and its APIs. Moving on, you'll take steps toward building stunning applications for Android. The book will show you how to set up the environment, and the difficulty level will grow steadily with the applications covered in the upcoming chapters. Later on, the book will introduce you to the Android Studio IDE, which plays an integral role in Android development. We'll use Kotlin's basic programming concepts such as functions, lambdas, properties, object-oriented code, safety aspects, type parameterization, testing, and concurrency, which will guide you through writing Kotlin code into production. We'll also show you how to integrate Kotlin into any existing Android project. Style and approach In this book, you'll master Android development using Kotlin through real application examples. We'll introduce you to basic Android concepts and offer guidance from the first steps to the final project. In each chapter, we'll develop one important application functionality as a development milestone. As we progress, you'll become more experienced in Android and our application will progress toward a real-world product. Finally, when we complete the application's development, we'll write proper tests to ensure it's production ready.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781788474665"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "178847466X"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 378,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.3.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=kEFPDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=kEFPDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=kEFPDwAAQBAJ&printsec=frontcover&dq=effective+kotlin&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=kEFPDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=kEFPDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 43164,
+          "currencyCode": "KRW"
+        },
+        "retailPrice": {
+          "amount": 38848,
+          "currencyCode": "KRW"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=kEFPDwAAQBAJ&rdid=book-kEFPDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 43164000000,
+              "currencyCode": "KRW"
+            },
+            "retailPrice": {
+              "amountInMicros": 38848000000,
+              "currencyCode": "KRW"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=kEFPDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Master Android development using a variety of Kotlin features About This Book Leverage specific features of Kotlin to ease Android application development An illustrative guide that will help you write code based Kotlin language to build ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "fO1mDwAAQBAJ",
+      "etag": "nOghazp1iN0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/fO1mDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Kotlin Standard Library Cookbook",
+        "subtitle": "Master the powerful Kotlin standard library through practical code examples",
+        "authors": [
+          "Samuel Urbanowicz"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2018-07-30",
+        "description": "Build optimized applications in Kotlin by learning how to make use of the standard library features the smart way Key Features Get the most out of the Kotlin library to develop high-quality portable applications Explore the powerful support for data processing and I/O operations Discover ways to enhance your Android application development Book Description Given the verbosity of Java, developers have turned to Kotlin for effective software development. The Kotlin standard library provides vital tools that make day-to-day Kotlin programming easier. This library features the core attributes of the language, such as algorithmic problems, design patterns, data processing, and working with files and data streams. The recipes in this book offer coding solutions that can be readily executed. The book covers various topics related to data processing, I/O operations, and collections transformation. We'll walk through effective design patterns in Kotlin and you'll understand how coroutines add new features to JavaScript. As you make your way through the chapters, you'll learn how to implement clean, reusable functions and scalable interfaces containing default implementations. In the concluding chapters, we'll provide recipes on functional programming concepts, such as lambdas, monads, functors, and Kotlin scoping functions. By the end of the book, you'll be able to address a range of problems that Kotlin developers face by implementing easy-to-follow solutions. What you will learn Work with ranges, progressions, and sequences in use cases Add new functionalities to current classes with Kotlin extensions Understand elements such as lambdas, closures, and monads Build a REST API consumer with Retrofit and a coroutine adapter Discover useful tips and solutions for making your Android projects Explore the benefits of standard library features Who this book is for This book is for software developers who are familiar with Kotlin’s basics and want to discover more advanced features and concepts, especially those provided by the Kotlin standard library. It’s also ideal for experienced software developers who are familiar with the functional programming paradigm and other programming languages who want to switch to Kotlin. It will also help Java developers switch to Kotlin and integrate it into existing Java Virtual Machine (JVM) projects.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781788834643"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "178883464X"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 242,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.3.4.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=fO1mDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=fO1mDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=fO1mDwAAQBAJ&printsec=frontcover&dq=effective+kotlin&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=fO1mDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=fO1mDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 35660,
+          "currencyCode": "KRW"
+        },
+        "retailPrice": {
+          "amount": 32094,
+          "currencyCode": "KRW"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=fO1mDwAAQBAJ&rdid=book-fO1mDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 35660000000,
+              "currencyCode": "KRW"
+            },
+            "retailPrice": {
+              "amountInMicros": 32094000000,
+              "currencyCode": "KRW"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=fO1mDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The recipes in this book offer coding solutions that can be readily executed. The book covers various topics related to data processing, I/O operations, and collections transformation."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ksuUPwAACAAJ",
+      "etag": "pre9FTV14xo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ksuUPwAACAAJ",
+      "volumeInfo": {
+        "title": "EFFECTIVE JAVA",
+        "authors": [
+          "Joshua Bloch"
+        ],
+        "publishedDate": "2003-05-15",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8990109140"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788990109149"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 326,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ksuUPwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ksuUPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "ko",
+        "previewLink": "http://books.google.co.kr/books?id=ksuUPwAACAAJ&dq=effective+kotlin&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.co.kr/books?id=ksuUPwAACAAJ&dq=effective+kotlin&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/EFFECTIVE_JAVA.html?hl=&id=ksuUPwAACAAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ksuUPwAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "kKs5zQEACAAJ",
+      "etag": "Xkq9LXyOsnU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/kKs5zQEACAAJ",
+      "volumeInfo": {
+        "title": "Android App Development with Kotlin",
+        "publishedDate": "2018",
+        "description": "\"Building Android apps using Java requires a lot of boilerplate and ceremonial code. Do you want to build Android apps in an easy and effective way? Migrate to Kotlin, a first-class language for Android apps that makes life easy for developers. This course will help you master Kotlin and build effective Android applications. The course teaches you to easily create an Android app using the Kotlin-Android extension plugin. Next, you will learn how to implement Kotlin features such as Object Oriented features, Companion Objects , and Kotlin classes in your Android application. Finally, you'll learn how to style your application, publish it to the Google Play Store, and make it available to the World. By the end of the course you will have learned to use Kotlin to develop your Android Application in a easy and effective way.\"--Resource description page.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "OCLC:1137153369"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=kKs5zQEACAAJ&dq=effective+kotlin&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.co.kr/books?id=kKs5zQEACAAJ&dq=effective+kotlin&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Android_App_Development_with_Kotlin.html?hl=&id=kKs5zQEACAAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=kKs5zQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "&quot;Building Android apps using Java requires a lot of boilerplate and ceremonial code."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "MrKuMQAACAAJ",
+      "etag": "UWWT/qksGyk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/MrKuMQAACAAJ",
+      "volumeInfo": {
+        "title": "Code Complete",
+        "authors": [
+          "Steve McConnell"
+        ],
+        "publishedDate": "2002-11-20",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8975880559"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788975880551"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1164,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=MrKuMQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=MrKuMQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=MrKuMQAACAAJ&dq=effective+kotlin&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.co.kr/books?id=MrKuMQAACAAJ&dq=effective+kotlin&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Code_Complete.html?hl=&id=MrKuMQAACAAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=MrKuMQAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "5RhRzQEACAAJ",
+      "etag": "cHyT9OCHynY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/5RhRzQEACAAJ",
+      "volumeInfo": {
+        "title": "Kotlin in Practice",
+        "authors": [
+          "Marko Devcic"
+        ],
+        "publishedDate": "2017",
+        "description": "\"Kotlin is a programming language intended to be better than Java, and it's designed to be usable on any platform that is compatible with Java. Kotlin is great for building amazing Android applications in an easy and effective way. During this course, you will build an Android app from scratch. Through this process, we'll explain the intermediate and advanced features of the Kotlin language. By the end of the course, you'll be proficient in building effective Android applications using Kotlin.\"--Resource description page.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "OCLC:1137157608"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.kr/books?id=5RhRzQEACAAJ&dq=effective+kotlin&hl=&cd=11&source=gbs_api",
+        "infoLink": "http://books.google.co.kr/books?id=5RhRzQEACAAJ&dq=effective+kotlin&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Kotlin_in_Practice.html?hl=&id=5RhRzQEACAAJ"
+      },
+      "saleInfo": {
+        "country": "KR",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "KR",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=5RhRzQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "&quot;Kotlin is a programming language intended to be better than Java, and it&#39;s designed to be usable on any platform that is compatible with Java."
+      }
+    }
+  ]
+}
