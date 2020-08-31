@@ -8,7 +8,6 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.Config
 import androidx.paging.PagedList
 import androidx.paging.toLiveData
-import com.beok.bookfinder.R
 import com.beok.bookfinder.model.BookItem
 import com.beok.bookfinder.search.datasource.BookSearchDataSourceFactory
 import com.beok.common.event.ViewModelToViewEvent
@@ -35,9 +34,6 @@ class BookSearchViewModel @ViewModelInject constructor(
     private val _errMessage = MutableLiveData<String>()
     val errMessage: LiveData<String> get() = _errMessage
 
-    private val _errResMessage = MutableLiveData<Int>()
-    val errResMessage: LiveData<Int> get() = _errResMessage
-
     private val _selectedBuyLink = MutableLiveData<String>()
     val selectedBuyLink: LiveData<String> get() = _selectedBuyLink
 
@@ -47,10 +43,6 @@ class BookSearchViewModel @ViewModelInject constructor(
     }
 
     fun onClick(item: BookItem) {
-        if (item.buyLink.isEmpty()) {
-            _errResMessage.value = R.string.err_not_exist_buy_link
-            return
-        }
         _selectedBuyLink.value = item.buyLink
     }
 

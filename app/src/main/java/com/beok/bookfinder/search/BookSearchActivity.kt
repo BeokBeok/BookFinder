@@ -58,14 +58,19 @@ class BookSearchActivity : BaseActivity<ActivityBookSearchBinding>(
             errMessage.observe(owner, Observer {
                 Toast.makeText(owner, it, Toast.LENGTH_SHORT).show()
             })
-            errResMessage.observe(owner, Observer {
-                Toast.makeText(owner, getString(it), Toast.LENGTH_SHORT).show()
-            })
             isShowResult.observe(owner, Observer { isShowResult ->
                 if (!isShowResult) return@Observer
                 showContents()
             })
             selectedBuyLink.observe(owner, Observer {
+                if (it.isEmpty()) {
+                    Toast.makeText(
+                        owner,
+                        getString(R.string.err_not_exist_buy_link),
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    return@Observer
+                }
                 startActivity<BookBuyInfoActivity>(bundleOf("buyLink" to it))
             })
         }
