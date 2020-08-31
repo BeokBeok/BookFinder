@@ -17,4 +17,9 @@ dependencies {
     implementation NetworkDependencies.CONVERTER_MOSHI
     implementation NetworkDependencies.MOSHI_KOTLIN
     kapt NetworkDependencies.MOSHI_KOTLIN_CODEGEN
+
+    testImplementation TestDependencies.JUNIT_JUPITER
+    testImplementation TestDependencies.ASSERTJ_CORE
+    testImplementation TestDependencies.MOCK_WEB_SERVER
+    testImplementation TestDependencies.MOCKITO_KOTLIN
 }
