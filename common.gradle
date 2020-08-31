@@ -45,6 +45,7 @@ dependencies {
     testImplementation TestDependencies.JUNIT_JUPITER
     testImplementation TestDependencies.ASSERTJ_CORE
     testImplementation TestDependencies.MOCK_WEB_SERVER
+    testImplementation TestDependencies.MOCKITO_KOTLIN
 
     implementation JetpackDependencies.HILT_ANDROID
     implementation JetpackDependencies.DAGGER_HILT_LIFECYCLE_VM

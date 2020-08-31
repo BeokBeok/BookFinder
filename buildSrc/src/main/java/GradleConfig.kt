@@ -42,6 +42,7 @@ object TestDependencies {
     const val JUNIT_JUPITER = "org.junit.jupiter:junit-jupiter:5.6.2"
     const val ASSERTJ_CORE = "org.assertj:assertj-core:3.16.1"
     const val MOCK_WEB_SERVER = "com.squareup.okhttp3:mockwebserver:4.8.1"
+    const val MOCKITO_KOTLIN = "com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0"
 }
 
 object JetpackDependencies {
