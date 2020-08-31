@@ -5,6 +5,7 @@ import com.beok.bookfinder.model.BookItem
 import com.beok.bookfinder.model.mapToPresenter
 import com.beok.common.event.ViewModelToViewEvent
 import com.beok.domain.BooksRepository
+import com.beok.domain.entity.ItemsItem
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -34,7 +35,7 @@ class BookSearchDataSource(
                 return@launch
             }
             val bookItems =
-                result.getOrNull()?.items?.map { it.mapToPresenter() } ?: emptyList()
+                result.getOrNull()?.items?.map(ItemsItem::mapToPresenter) ?: emptyList()
             callback.onResult(bookItems, null, PER_PAGE)
             viewModelToViewEvent.showLoading(false)
         }
@@ -54,7 +55,7 @@ class BookSearchDataSource(
                 return@launch
             }
             val bookItems =
-                result.getOrNull()?.items?.map { it.mapToPresenter() } ?: emptyList()
+                result.getOrNull()?.items?.map(ItemsItem::mapToPresenter) ?: emptyList()
             callback.onResult(bookItems, params.key + PER_PAGE)
             viewModelToViewEvent.showLoading(false)
         }
