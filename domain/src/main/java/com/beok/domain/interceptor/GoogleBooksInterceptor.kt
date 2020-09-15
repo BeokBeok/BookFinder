@@ -19,6 +19,6 @@ class GoogleBooksInterceptor @Inject constructor() : Interceptor {
     }
 
     companion object {
-        private const val API_KEY = "AIzaSyBTssaXMuVQ9LAesQPUUAsTvXMwP99AJDM"
+        private const val API_KEY = "your_api_key"
     }
 }
