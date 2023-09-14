@@ -9,7 +9,7 @@ data class BookItem(
     val publishedDate: String,
     val imageUrl: String,
     val buyLink: String,
-    val testField: String = ""
+    val testField: Int = 0
 )
 
 fun ItemsItem.mapToPresenter() = BookItem(
