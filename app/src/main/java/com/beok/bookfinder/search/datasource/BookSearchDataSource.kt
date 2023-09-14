@@ -16,7 +16,6 @@ class BookSearchDataSource(
     private val booksRepository: BooksRepository,
     private val viewModelToViewEvent: ViewModelToViewEvent
 ) : PageKeyedDataSource<Int, BookItem>() {
-
     private val ioScope: CoroutineScope = CoroutineScope(Dispatchers.IO)
     private val coroutineExceptionHandler = CoroutineExceptionHandler { _, throwable ->
         viewModelToViewEvent.showErrorMessage(throwable.message ?: "")
