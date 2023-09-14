@@ -60,7 +60,8 @@ class BookSearchDataSource(
         }
     }
 
-    override fun loadBefore(params: LoadParams<Int>, callback: LoadCallback<Int, BookItem>) = Unit
+    override fun loadBefore(params: LoadParams<Int>, callback: LoadCallback<Int, BookItem>) = 
+        Unit
 
     companion object {
         private const val PER_PAGE = 40
