@@ -19,11 +19,13 @@ class BooksRepositoryTest {
     @Before
     fun setup() {
         repository = BooksRepository(booksService = service)
+        
     }
 
     @Test
     fun requestBookSearchTest() = runBlocking<Unit> {
         val mockData = MockUtil.mockToBooksResponse()
+        
         whenever(service.search(keyword = "effective kotlin")).thenReturn(mockData)
 
         repository.searchBook(keyword = "effective kotlin").getOrNull()?.let {
