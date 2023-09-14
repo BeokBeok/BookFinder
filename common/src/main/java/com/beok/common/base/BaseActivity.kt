@@ -22,4 +22,7 @@ abstract class BaseActivity<VDB : ViewDataBinding>(
             lifecycleOwner = this@BaseActivity
         }
     }
+
+
+    
 }
