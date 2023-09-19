@@ -107,4 +107,5 @@ class BookSearchActivity : BaseActivity<ActivityBookSearchBinding>(
         private const val PORTRAIT_SPAN_COUNT = 2
         private const val LANDSCAPE_SPAN_COUNT = 4
     }
+
 }
