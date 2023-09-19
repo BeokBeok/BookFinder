@@ -18,7 +18,6 @@ import kotlinx.coroutines.CoroutineExceptionHandler
 class BookSearchViewModel @ViewModelInject constructor(
     private val booksRepository: BooksRepository
 ) : ViewModel() {
-
     var book: LiveData<PagedList<BookItem>>? = null
         private set
 
