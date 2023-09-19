@@ -12,7 +12,6 @@ class BaseAdapter<ITEM : Any>(
     private val viewModel: Map<Int, ViewModel>,
     diffUtil: DiffUtil.ItemCallback<ITEM>
 ) : PagedListAdapter<ITEM, BaseViewHolder>(diffUtil) {
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder =
         BaseViewHolder(
             parent = parent,
