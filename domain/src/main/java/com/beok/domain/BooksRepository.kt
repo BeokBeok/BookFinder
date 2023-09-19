@@ -5,8 +5,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
-class BooksRepository @Inject constructor(private val booksService: BooksService) :
-    BooksDataSource {
+class BooksRepository @Inject constructor(
+    private val booksService: BooksService
+) : BooksDataSource {
 
     private val ioDispatcher = Dispatchers.IO
 
