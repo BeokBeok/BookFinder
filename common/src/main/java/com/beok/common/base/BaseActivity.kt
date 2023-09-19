@@ -9,7 +9,6 @@ import androidx.databinding.ViewDataBinding
 abstract class BaseActivity<VDB : ViewDataBinding>(
     @LayoutRes private val layoutRes: Int
 ) : AppCompatActivity() {
-
     protected lateinit var binding: VDB
 
     override fun onCreate(savedInstanceState: Bundle?) {
